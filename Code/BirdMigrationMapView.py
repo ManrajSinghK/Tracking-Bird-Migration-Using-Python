@@ -6,10 +6,7 @@ import matplotlib.pyplot as plt
   
 birddata = pd.read_csv("bird_tracking.csv") 
 bird_names = pd.unique(birddata.bird_name) 
-  
-# To move forward, we need to specify a  
-# specific projection that we're interested  
-# in using. 
+ 
 proj = ccrs.Mercator()  
   
 plt.figure(figsize=(10,10)) 
